@@ -11,8 +11,16 @@
   "capabilities": {
     "skills": [
       {
+        "id": "church-year",
+        "path": "skills/church-year/SKILL.md"
+      },
+      {
         "id": "compare-observances",
         "path": "skills/compare-observances/SKILL.md"
+      },
+      {
+        "id": "hebrew-calendar",
+        "path": "skills/hebrew-calendar/SKILL.md"
       },
       {
         "id": "local-shabbat",
