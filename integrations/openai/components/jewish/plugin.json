@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "sacred-calendars-jewish",
+  "version": "1.0.0",
+  "description": "Convert a Hebrew date, explore Jewish observances or check local candle-lighting times.",
+  "author": {
+    "name": "OpZero",
+    "url": "https://opzero.sh"
+  },
+  "homepage": "https://jewish-calendar.mcp.opzero.sh/",
+  "repository": "https://github.com/OpZero-sh/sacred-calendars-plugin",
+  "license": "LicenseRef-OpZero-Plugin",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Jewish Calendar",
+        "shortDescription": "Find holidays and Shabbat",
+        "longDescription": "Convert a Hebrew date, explore Jewish observances or check local candle-lighting times.",
+        "developerName": "OpZero",
+        "category": "Productivity",
+        "websiteURL": "https://jewish-calendar.mcp.opzero.sh/",
+        "privacyPolicyURL": "https://jewish-calendar.mcp.opzero.sh/?page=privacy",
+        "supportURL": "https://jewish-calendar.mcp.opzero.sh/?page=support",
+        "termsOfServiceURL": "https://opzero.sh/terms",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      }
+    }
+  }
+}

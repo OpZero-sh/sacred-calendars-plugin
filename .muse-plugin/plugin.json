@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "name": "sacred-calendars",
+  "version": "1.0.0",
+  "displayName": "Sacred Calendars",
+  "description": "Look up a church season, a Hebrew date or an upcoming holy day, and put observances from both calendars on the same civil timeline.",
+  "compat": {
+    "source": "native",
+    "manifestDir": ".muse-plugin"
+  },
+  "capabilities": {
+    "skills": [
+      {
+        "id": "compare-observances",
+        "path": "skills/compare-observances/SKILL.md"
+      },
+      {
+        "id": "local-shabbat",
+        "path": "skills/local-shabbat/SKILL.md"
+      }
+    ],
+    "mcpServers": [
+      {
+        "id": "church",
+        "transport": "http",
+        "url": "https://liturgical-year.mcp.opzero.sh/mcp"
+      },
+      {
+        "id": "jewish",
+        "transport": "http",
+        "url": "https://jewish-calendar.mcp.opzero.sh/mcp"
+      }
+    ]
+  }
+}

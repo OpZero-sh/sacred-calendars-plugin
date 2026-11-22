@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "church": {
+      "type": "http",
+      "url": "https://liturgical-year.mcp.opzero.sh/mcp"
+    },
+    "jewish": {
+      "type": "http",
+      "url": "https://jewish-calendar.mcp.opzero.sh/mcp"
+    }
+  }
+}

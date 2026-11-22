@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "sacred-calendars-church",
+  "version": "1.0.0",
+  "description": "Look up a church season, Easter date or series of upcoming Sundays.",
+  "author": {
+    "name": "OpZero",
+    "url": "https://opzero.sh"
+  },
+  "homepage": "https://liturgical-year.mcp.opzero.sh/",
+  "repository": "https://github.com/OpZero-sh/sacred-calendars-plugin",
+  "license": "LicenseRef-OpZero-Plugin",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Liturgical Year",
+        "shortDescription": "Find feast days and seasons",
+        "longDescription": "Look up a church season, Easter date or series of upcoming Sundays.",
+        "developerName": "OpZero",
+        "category": "Productivity",
+        "websiteURL": "https://liturgical-year.mcp.opzero.sh/",
+        "privacyPolicyURL": "https://liturgical-year.mcp.opzero.sh/?page=privacy",
+        "supportURL": "https://liturgical-year.mcp.opzero.sh/?page=support",
+        "termsOfServiceURL": "https://opzero.sh/terms",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      }
+    }
+  }
+}

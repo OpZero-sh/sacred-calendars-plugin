@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "sacred-calendars",
+  "version": "1.0.0",
+  "description": "Look up a church season, a Hebrew date or an upcoming holy day, and put observances from both calendars on the same civil timeline.",
+  "author": {
+    "name": "OpZero",
+    "url": "https://opzero.sh"
+  },
+  "homepage": "https://github.com/OpZero-sh/sacred-calendars-plugin",
+  "repository": "https://github.com/OpZero-sh/sacred-calendars-plugin",
+  "license": "LicenseRef-OpZero-Plugin",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Sacred Calendars",
+        "shortDescription": "Compare dates and observances",
+        "longDescription": "Look up a church season, a Hebrew date or an upcoming holy day, and put observances from both calendars on the same civil timeline.",
+        "developerName": "OpZero",
+        "category": "Productivity",
+        "websiteURL": "https://github.com/OpZero-sh/sacred-calendars-plugin",
+        "privacyPolicyURL": "https://opzero.sh/privacy",
+        "supportURL": "https://opzero.sh/support",
+        "termsOfServiceURL": "https://opzero.sh/terms",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      }
+    }
+  }
+}

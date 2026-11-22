@@ -1,0 +1,18 @@
+{
+  "church": {
+    "url": "https://liturgical-year.mcp.opzero.sh/mcp",
+    "allowed_tools": [
+      "liturgical_day",
+      "church_year_sundays",
+      "moveable_feasts"
+    ]
+  },
+  "jewish": {
+    "url": "https://jewish-calendar.mcp.opzero.sh/mcp",
+    "allowed_tools": [
+      "hebrew_date",
+      "jewish_holidays",
+      "shabbat_times"
+    ]
+  }
+}

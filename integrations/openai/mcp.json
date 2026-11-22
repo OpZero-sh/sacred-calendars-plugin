@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "church": {
+      "type": "streamable-http",
+      "url": "https://liturgical-year.mcp.opzero.sh/mcp"
+    },
+    "jewish": {
+      "type": "streamable-http",
+      "url": "https://jewish-calendar.mcp.opzero.sh/mcp"
+    }
+  }
+}
