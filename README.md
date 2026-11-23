@@ -56,10 +56,10 @@ The plugin talks to two remote MCP servers run by OpZero. It contacts no other h
 
 Both services state that they do not store requests. City centre coordinates are enough for a city level answer, so there is no need to give a home address. The church calendar is computed on the server. The Jewish Calendar server draws its data from Hebcal and keeps a cached copy of that public data.
 
-The repository also holds files for other assistants. Claude does not run them, and nothing in the plugin calls them.
+The repository also holds settings files for other assistants. Claude does not run them, and nothing in the plugin calls them. The two scripts that use them are not in this repository. They live in the catalog repository, [OpZero-sh/plugins](https://github.com/OpZero-sh/plugins).
 
-- `scripts/build_openai.py` builds ZIP packages for ChatGPT and Codex from this repository. It reads local files and writes ZIP files to the folder you name. It uses no network.
-- `integrations/grok_example.py` is an optional example for the xAI API. It reads `XAI_API_KEY` from your environment and sends one request to `api.x.ai` only when you run it yourself without the dry run flag. With the dry run flag it prints the request and sends nothing.
+- The catalog's `tools/build_openai.py` builds ZIP packages for ChatGPT and Codex from this repository's skills, license, `assets/icon.png` and `integrations/openai`. It reads local files and writes ZIP files to the folder you name. It uses no network.
+- The catalog's `tools/grok_example.py` is an optional example for the xAI API. It reads `integrations/grok-servers.json` and `XAI_API_KEY` from your environment and sends one request to `api.x.ai` only when you run it yourself without the dry run flag. With the dry run flag it prints the request and sends nothing.
 - The JSON files under `integrations/` are settings for those assistants. They list the same two hosts.
 
 ## Sources and limits

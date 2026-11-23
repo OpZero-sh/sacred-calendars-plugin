@@ -8,7 +8,7 @@ Look up a church season, a Hebrew date or an upcoming holy day, and put observan
 
 [Liturgical Year](https://raw.githubusercontent.com/OpZero-sh/sacred-calendars-plugin/downloads/sacred-calendars--church.zip) · [Jewish Calendar](https://raw.githubusercontent.com/OpZero-sh/sacred-calendars-plugin/downloads/sacred-calendars--jewish.zip)
 
-For a publisher or developer setup, open the OpenAI developer dashboard, choose **Upload plugin**, upload the one-connection ZIP and connect the declared MCP endpoint. People with an existing directory listing can install it directly in ChatGPT. For an OAuth-protected service select OAuth and complete its browser sign-in. Choose no authentication for a public service. Rebuild the archives from a checkout with `python3 scripts/build_openai.py ../plugin-zips`.
+For a publisher or developer setup, open the OpenAI developer dashboard, choose **Upload plugin**, upload the one-connection ZIP and connect the declared MCP endpoint. People with an existing directory listing can install it directly in ChatGPT. For an OAuth-protected service select OAuth and complete its browser sign-in. Choose no authentication for a public service. The builder is not in this repository. To rebuild the archives, clone [OpZero-sh/plugins](https://github.com/OpZero-sh/plugins) beside this checkout and run `python3 ../plugins/tools/build_openai.py ../plugin-zips` from this checkout.
 
 [OpenAI package guide](https://developers.openai.com/plugins/build/plugins) · [Upload and connection setup](https://developers.openai.com/plugins/deploy/submission)
 
@@ -22,10 +22,10 @@ From a checkout of this repository, run `grok plugin validate .` and `grok plugi
 
 ## Grok API
 
-Preview a request locally with Python 3. Add `XAI_API_KEY` in your environment and omit `--dry-run` to send it. Use `--model` to select a model enabled for your account. The example requests a focused set of product tools; its tool list is in [grok-servers.json](integrations/grok-servers.json).
+The example script is not in this repository. Clone [OpZero-sh/plugins](https://github.com/OpZero-sh/plugins) beside this checkout, then preview a request from this checkout with Python 3. Add `XAI_API_KEY` in your environment and omit `--dry-run` to send it. Use `--model` to select a model enabled for your account. The example requests a focused set of product tools; its tool list is in [grok-servers.json](integrations/grok-servers.json).
 
 ```sh
-python3 integrations/grok_example.py --dry-run 'When are Western Easter and Orthodox Pascha in 2027?'
+python3 ../plugins/tools/grok_example.py --dry-run 'When are Western Easter and Orthodox Pascha in 2027?'
 ```
 
 [Remote MCP tools in the xAI API](https://docs.x.ai/developers/tools/remote-mcp)

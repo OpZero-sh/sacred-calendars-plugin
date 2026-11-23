@@ -14,11 +14,5 @@
   "supportUrl": "https://opzero.sh/support",
   "termsOfServiceUrl": "https://opzero.sh/terms",
   "icon": "./assets/icon.png",
-  "license": "LicenseRef-OpZero-Plugin",
-  "network": {
-    "hosts": [
-      "liturgical-year.mcp.opzero.sh",
-      "jewish-calendar.mcp.opzero.sh"
-    ]
-  }
+  "license": "LicenseRef-OpZero-Plugin"
 }
